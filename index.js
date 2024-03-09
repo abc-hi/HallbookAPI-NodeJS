@@ -13,13 +13,13 @@ app.get('/', (req, res) => {
     const endpoints = `
         <h2>API Endpoints:</h2>
         <ul>
-            <li>API Endpoint for list all rooms: <strong>GET</strong>  <p style={{color: 'green'}}>http://localhost:4000/api/get-room</p></li>
-            <li>API Endpoint for all rooms with booked details: <strong>GET</strong>  <p style={{color: 'green'}}>http://localhost:4000/api/booked-room</p></li>
-            <li>API Endpoint for list all customers with booked data: <strong>GET</strong> <p style={{color: 'green'}}> http://localhost:4000/api/get-customerdata</p></li>
-            <li>API Endpoint for how many customers have booked: <strong>GET</strong>  <p style={{color: 'green'}}>http://localhost:4000/api/book-count</p></li>
-            <li>API Endpoint for creating a new room: <strong>POST</strong>  <p style={{color: 'green'}}>http://localhost:4000/api/create-room</p></li>
-            <li>API Endpoint for booking room: <strong>POST</strong> <p style={{color: 'green'}}>http://localhost:4000/api/book-room</p></li>
-        </ul>
+        <li>API Endpoint for list all rooms: <strong style="color: green;">GET</strong>  <h4 style="color: green;">http://localhost:4000/api/get-room</h4></li>
+        <li>API Endpoint for all rooms with booked details: <strong style="color: green;">GET</strong>  <h4 style="color: green;">http://localhost:4000/api/booked-room</h4></li>
+        <li>API Endpoint for list all customers with booked data: <strong style="color: green;">GET</strong> <h4 style="color: green;">http://localhost:4000/api/get-customerdata</h4></li>
+        <li>API Endpoint for how many customers have booked: <strong style="color: green;">GET</strong>  <h4 style="color: green;">http://localhost:4000/api/book-count</h4></li>
+        <li>API Endpoint for creating a new room: <strong style="color: green;">POST</strong>  <h4 style="color: green;">http://localhost:4000/api/create-room</h4></li>
+        <li>API Endpoint for booking room: <strong style="color: green;">POST</strong> <h4 style="color: green;">http://localhost:4000/api/book-room</h4></li>
+    </ul>
     `;
     res.send(endpoints);});    
 
