@@ -9,19 +9,19 @@ const app =express();
 const PORT=4000;
 
     
-    app.get('/', (req, res) => {
-        const endpoints = `
-            API Endpoint for list all rooms: GET http://localhost:4000/api/get-room
-            API Endpoint for all rooms with booked details: GET http://localhost:4000/api/booked-room
-            API Endpoint for list all customers with booked data: GET http://localhost:4000/api/get-customerdata
-            API Endpoint for how many customers have booked: GET http://localhost:4000/api/book-count
-            API Endpoint for creating a new room: POST http://localhost:4000/api/create-room
-            API Endpoint for booking room: POST http://localhost:4000/api/book-room
-        `;
-        res.send(endpoints);
-    });
-
-    
+app.get('/', (req, res) => {
+    const endpoints = `
+        <h2>API Endpoints:</h2>
+        <ul>
+            <li>API Endpoint for list all rooms: <strong>GET</strong> <a href="http://localhost:4000/api/get-room">http://localhost:4000/api/get-room</a></li>
+            <li>API Endpoint for all rooms with booked details: <strong>GET</strong> <a href="http://localhost:4000/api/booked-room">http://localhost:4000/api/booked-room</a></li>
+            <li>API Endpoint for list all customers with booked data: <strong>GET</strong> <a href="http://localhost:4000/api/get-customerdata">http://localhost:4000/api/get-customerdata</a></li>
+            <li>API Endpoint for how many customers have booked: <strong>GET</strong> <a href="http://localhost:4000/api/book-count">http://localhost:4000/api/book-count</a></li>
+            <li>API Endpoint for creating a new room: <strong>POST</strong> <a href="http://localhost:4000/api/create-room">http://localhost:4000/api/create-room</a></li>
+            <li>API Endpoint for booking room: <strong>POST</strong> <a href="http://localhost:4000/api/book-room">http://localhost:4000/api/book-room</a></li>
+        </ul>
+    `;
+    res.send(endpoints);});    
 
 
 // app.get('/',(req,res)=>{
